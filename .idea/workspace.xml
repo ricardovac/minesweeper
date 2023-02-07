@@ -7,7 +7,7 @@
     <list default="true" id="27e4497d-ad61-46bb-ab30-25760c4ec6f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Campo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Tabuleiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/ricardovac/ms/models/CampoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/ricardovac/ms/models/CampoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -27,6 +27,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LCvtJcWc4qSGo119TMjeaCzexd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -61,11 +64,14 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.editor",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ricardovac.ms.exceptions" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/br/com/ricardovac/ms" />
       <recent name="$PROJECT_DIR$" />
@@ -79,28 +85,7 @@
       <recent name="test.com.ricardovac.ms" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CampoTest.testeVizinhoRealDistancia1Direita">
-    <configuration name="Tabuleiro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricardovac.ms.models.Tabuleiro" />
-      <module name="minesweeper" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ricardovac.ms.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in minesweeper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="minesweeper" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CampoTest">
     <configuration name="CampoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="minesweeper" />
       <extension name="coverage">
@@ -116,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CampoTest.testeVizinhoRealDistancia1Direita" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CampoTest.testeAbrirComVizinho" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="minesweeper" />
       <extension name="coverage">
         <pattern>
@@ -126,33 +111,67 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ricardovac.ms.models" />
       <option name="MAIN_CLASS_NAME" value="com.ricardovac.ms.models.CampoTest" />
-      <option name="METHOD_NAME" value="testeVizinhoRealDistancia1Direita" />
+      <option name="METHOD_NAME" value="testeAbrirComVizinho" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.com.ricardovac.ms in minesweeper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CampoTest.testeAbrirComVizinho2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="minesweeper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.com.ricardovac.ms.*" />
+          <option name="PATTERN" value="com.ricardovac.ms.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.com.ricardovac.ms" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com.ricardovac.ms.models" />
+      <option name="MAIN_CLASS_NAME" value="com.ricardovac.ms.models.CampoTest" />
+      <option name="METHOD_NAME" value="testeAbrirComVizinho2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CampoTest.testeAbrirMinadoNaoMarcado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ricardovac.ms.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ricardovac.ms.models" />
+      <option name="MAIN_CLASS_NAME" value="com.ricardovac.ms.models.CampoTest" />
+      <option name="METHOD_NAME" value="testeAbrirMinadoNaoMarcado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CampoTest.testeAbrirNaoMinadoNaoMarcado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ricardovac.ms.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ricardovac.ms.models" />
+      <option name="MAIN_CLASS_NAME" value="com.ricardovac.ms.models.CampoTest" />
+      <option name="METHOD_NAME" value="testeAbrirNaoMinadoNaoMarcado" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CampoTest.testeVizinhoRealDistancia1Direita" />
         <item itemvalue="JUnit.CampoTest" />
-        <item itemvalue="JUnit.All in minesweeper" />
-        <item itemvalue="Application.Tabuleiro" />
-        <item itemvalue="JUnit.test.com.ricardovac.ms in minesweeper" />
+        <item itemvalue="JUnit.CampoTest.testeAbrirNaoMinadoNaoMarcado" />
+        <item itemvalue="JUnit.CampoTest.testeAbrirComVizinho2" />
+        <item itemvalue="JUnit.CampoTest.testeAbrirComVizinho" />
+        <item itemvalue="JUnit.CampoTest.testeAbrirMinadoNaoMarcado" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +186,8 @@
       <workItem from="1675388094365" duration="7442000" />
       <workItem from="1675434393523" duration="3195000" />
       <workItem from="1675444240795" duration="1379000" />
-      <workItem from="1675445737541" duration="8058000" />
+      <workItem from="1675445737541" duration="8262000" />
+      <workItem from="1675708459229" duration="19488000" />
     </task>
     <servers />
   </component>
@@ -188,5 +208,13 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/campo_minado$CampoTest.ic" NAME="CampoTest Coverage Results" MODIFIED="1675736539886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ricardovac.ms.models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campo_minado$CampoTest_testeAbrirComVizinho2.ic" NAME="CampoTest.testeAbrirComVizinho2 Coverage Results" MODIFIED="1675737664662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ricardovac.ms.models.*</FILTER>
+    </SUITE>
   </component>
 </project>
