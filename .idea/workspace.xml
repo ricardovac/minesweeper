@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="27e4497d-ad61-46bb-ab30-25760c4ec6f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Campo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/ricardovac/ms/models/CampoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/ricardovac/ms/models/CampoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/Aplicacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Tabuleiro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,35 +39,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
-    "create.test.in.the.same.root": "true",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "/home/ricardo/IdeaProjects/campo-minado/src/test/br/com/ricardovac/ms",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ricardo/IdeaProjects/campo-minado/src/test/br/com/ricardovac/ms&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ricardovac.ms.exceptions" />
@@ -79,13 +79,16 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ricardovac.ms" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.ricardovac.ms.models" />
       <recent name="" />
       <recent name="test.com.ricardovac.ms" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CampoTest">
+  <component name="RunManager">
     <configuration name="CampoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="minesweeper" />
       <extension name="coverage">
@@ -133,22 +136,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CampoTest.testeAbrirMinadoNaoMarcado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="minesweeper" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ricardovac.ms.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ricardovac.ms.models" />
-      <option name="MAIN_CLASS_NAME" value="com.ricardovac.ms.models.CampoTest" />
-      <option name="METHOD_NAME" value="testeAbrirMinadoNaoMarcado" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CampoTest.testeAbrirNaoMinadoNaoMarcado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="minesweeper" />
       <extension name="coverage">
@@ -165,13 +152,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CampoTest.testeMinasNaVizinhanca" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ricardovac.ms.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ricardovac.ms.models" />
+      <option name="MAIN_CLASS_NAME" value="com.ricardovac.ms.models.CampoTest" />
+      <option name="METHOD_NAME" value="testeMinasNaVizinhanca" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CampoTest.testeMinasNaVizinhanca" />
         <item itemvalue="JUnit.CampoTest" />
         <item itemvalue="JUnit.CampoTest.testeAbrirNaoMinadoNaoMarcado" />
         <item itemvalue="JUnit.CampoTest.testeAbrirComVizinho2" />
         <item itemvalue="JUnit.CampoTest.testeAbrirComVizinho" />
-        <item itemvalue="JUnit.CampoTest.testeAbrirMinadoNaoMarcado" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +190,10 @@
       <workItem from="1675434393523" duration="3195000" />
       <workItem from="1675444240795" duration="1379000" />
       <workItem from="1675445737541" duration="8262000" />
-      <workItem from="1675708459229" duration="19488000" />
+      <workItem from="1675708459229" duration="22734000" />
+      <workItem from="1675797098468" duration="10913000" />
+      <workItem from="1675878259210" duration="7190000" />
+      <workItem from="1676341185320" duration="535000" />
     </task>
     <servers />
   </component>
@@ -210,10 +216,13 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/campo_minado$CampoTest.ic" NAME="CampoTest Coverage Results" MODIFIED="1675736539886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/campo_minado$CampoTest.ic" NAME="CampoTest Coverage Results" MODIFIED="1675737953552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.ricardovac.ms.models.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/campo_minado$CampoTest_testeAbrirComVizinho2.ic" NAME="CampoTest.testeAbrirComVizinho2 Coverage Results" MODIFIED="1675737664662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ricardovac.ms.models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campo_minado$CampoTest_testeAbrirNaoMinadoNaoMarcado.ic" NAME="CampoTest.testeAbrirNaoMinadoNaoMarcado Coverage Results" MODIFIED="1675737889669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.ricardovac.ms.models.*</FILTER>
     </SUITE>
   </component>

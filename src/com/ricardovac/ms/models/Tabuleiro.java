@@ -21,6 +21,20 @@ public class Tabuleiro {
         sortearMinas();
     }
 
+    public void abrir(int linha, int coluna) {
+        campos.parallelStream()
+                .filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
+                .findFirst()
+                .ifPresent(Campo::abrir);
+    }
+
+    public void alterarMarcacao(int linha, int coluna) {
+        campos.parallelStream()
+                .filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
+                .findFirst()
+                .ifPresent(Campo::alternarMarcacao);
+    }
+
     private void gerarCampos() {
         for (int i = 0; i < linhas; i++) {
             for (int j = 0; j < colunas; j++) {
@@ -28,6 +42,7 @@ public class Tabuleiro {
             }
         }
     }
+
     private void associarOsVizinhos() {
         for (Campo c1: campos) {
             for (Campo c2: campos){
@@ -35,6 +50,7 @@ public class Tabuleiro {
             }
         }
     }
+
     private void sortearMinas() {
         long minasArmadas;
         Predicate<Campo> minado = Campo::isMinado;
@@ -52,5 +68,21 @@ public class Tabuleiro {
     public void reiniciar() {
         campos.stream().forEach(Campo::reiniciar);
         sortearMinas();
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        int i = 0;
+        for (int l = 0; l < linhas; l++) {
+            for (int c = 0; c < colunas; c++) {
+                sb.append(" ");
+                sb.append(campos.get(i));
+                sb.append(" ");
+                i++;
+            }
+            sb.append("\n");
+        }
+        return sb.toString();
     }
 }
