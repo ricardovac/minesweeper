@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class Tabuleiro {
-    private int linhas;
-    private int colunas;
-    private int minas;
+    private final int linhas;
+    private final int colunas;
+    private final int minas;
 
     private final List<Campo> campos = new ArrayList<>();
 
@@ -66,7 +66,7 @@ public class Tabuleiro {
     }
 
     public void reiniciar() {
-        campos.stream().forEach(Campo::reiniciar);
+        campos.forEach(Campo::reiniciar);
         sortearMinas();
     }
 
