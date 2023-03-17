@@ -12,10 +12,20 @@ public class Campo {
     private boolean marcado = false;
 
     private final List<Campo> vizinhos = new ArrayList<>();
+    private List<CampoObservador> observadores = new ArrayList<>();
 
     Campo(int linha, int coluna) {
         this.linha = linha;
         this.coluna = coluna;
+    }
+
+    public void registerObservador(CampoObservador observador) {
+        observadores.add(observador);
+    }
+
+    private void notificarObservadores(CampoEvento evento) {
+        observadores.stream()
+            .forEach(o -> o.eventoOcorreu(this, evento));
     }
 
     boolean adicionarVizinho(Campo vizinho) {

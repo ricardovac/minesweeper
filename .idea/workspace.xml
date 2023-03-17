@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e4497d-ad61-46bb-ab30-25760c4ec6f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/CampoEvento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/CampoObservador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/Aplicacao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/exceptions/ExplosaoException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/exceptions/SairException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Campo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Tabuleiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/views/TabuleiroConsole.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +201,7 @@
       <workItem from="1676514568204" duration="2656000" />
       <workItem from="1676601069703" duration="438000" />
       <workItem from="1676921630947" duration="9000" />
-      <workItem from="1679042811751" duration="147000" />
+      <workItem from="1679042811751" duration="643000" />
     </task>
     <servers />
   </component>
