@@ -1,7 +1,5 @@
 package com.ricardovac.ms.models;
 
-import com.ricardovac.ms.exceptions.ExplosaoException;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -29,7 +27,8 @@ public class Tabuleiro {
                     .filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
                     .findFirst()
                     .ifPresent(Campo::abrir);
-        } catch (ExplosaoException e) {
+        } catch (Exception e) {
+            // FIXME: Ajustar implementação do método abrir
             campos.forEach(c -> c.setAberto(true));
             throw e;
         }
@@ -75,21 +74,5 @@ public class Tabuleiro {
     public void reiniciar() {
         campos.forEach(Campo::reiniciar);
         sortearMinas();
-    }
-
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-
-        int i = 0;
-        for (int l = 0; l < linhas; l++) {
-            for (int c = 0; c < colunas; c++) {
-                sb.append(" ");
-                sb.append(campos.get(i));
-                sb.append(" ");
-                i++;
-            }
-            sb.append("\n");
-        }
-        return sb.toString();
     }
 }

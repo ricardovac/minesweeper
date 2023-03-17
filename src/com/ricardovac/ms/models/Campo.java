@@ -1,7 +1,5 @@
 package com.ricardovac.ms.models;
 
-import com.ricardovac.ms.exceptions.ExplosaoException;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +11,7 @@ public class Campo {
     private boolean minado = false;
     private boolean marcado = false;
 
-    private List<Campo> vizinhos = new ArrayList<>();
+    private final List<Campo> vizinhos = new ArrayList<>();
 
     Campo(int linha, int coluna) {
         this.linha = linha;
@@ -51,7 +49,7 @@ public class Campo {
             aberto = true;
             // Verifica se o campo está minado
             if(minado) {
-                throw new ExplosaoException();
+                // TODO: nova versao
             }
             if(vizinhancaSegura()) {
                vizinhos.forEach(v -> v.abrir());
@@ -107,19 +105,5 @@ public class Campo {
         aberto  = false;
         minado = false;
         marcado = false;
-    }
-
-    public String toString() {
-        if (marcado) {
-            return "*";
-        } else if (aberto && minado) {
-            return "*";
-        } else if (aberto && minasNaVizinhanca() > 0) {
-            return Long.toString(minasNaVizinhanca());
-        } else if (aberto) {
-            return " ";
-        } else {
-            return "?";
-        }
     }
 }
