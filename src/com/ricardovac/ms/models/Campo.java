@@ -19,7 +19,7 @@ public class Campo {
         this.coluna = coluna;
     }
 
-    public void registerObservador(CampoObservador observador) {
+    public void registrarObservador(CampoObservador observador) {
         observadores.add(observador);
     }
 
@@ -51,6 +51,12 @@ public class Campo {
     void alternarMarcacao() {
         if(!aberto) {
             marcado = !marcado;
+
+            if (marcado) {
+                notificarObservadores(CampoEvento.MARCAR);
+            } else {
+                notificarObservadores(CampoEvento.DESMARCAR);
+            }
         }
     }
 
@@ -59,12 +65,16 @@ public class Campo {
             aberto = true;
             // Verifica se o campo está minado
             if(minado) {
-                // TODO: nova versao
+                notificarObservadores(CampoEvento.EXPLODIR);
+                return true;
             }
-            if(vizinhancaSegura()) {
-               vizinhos.forEach(v -> v.abrir());
+
+            setAberto(true);
+            notificarObservadores(CampoEvento.ABRIR);
+
+            if (vizinhancaSegura()) {
+                vizinhos.forEach(v -> v.abrir());
             }
-            return true;
         }
         return false;
     }
@@ -83,6 +93,10 @@ public class Campo {
 
     void setAberto(boolean aberto) {
         this.aberto = aberto;
+
+        if (aberto) {
+            notificarObservadores(CampoEvento.ABRIR);
+        }
     }
 
     public boolean isAberto() {
