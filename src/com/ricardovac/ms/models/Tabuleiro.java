@@ -39,9 +39,9 @@ public class Tabuleiro implements CampoObservador {
     public void abrir(int linha, int coluna) {
         try {
             campos.parallelStream()
-                .filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
-                .findFirst()
-                .ifPresent(Campo::abrir);
+                    .filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
+                    .findFirst()
+                    .ifPresent(Campo::abrir);
         } catch (Exception e) {
             // FIXME: Ajustar implementação do método abrir
             campos.forEach(c -> c.setAberto(true));
@@ -67,8 +67,8 @@ public class Tabuleiro implements CampoObservador {
     }
 
     private void associarOsVizinhos() {
-        for (Campo c1: campos) {
-            for (Campo c2: campos){
+        for (Campo c1 : campos) {
+            for (Campo c2 : campos) {
                 c1.adicionarVizinho(c2);
             }
         }
@@ -98,15 +98,16 @@ public class Tabuleiro implements CampoObservador {
         if (evento == CampoEvento.EXPLODIR) {
             mostrarMinas();
             notificarObservadores(false); // Ganhou == false
-        } else if (objetivoAlcancado()){
+        } else if (objetivoAlcancado()) {
             notificarObservadores(true);
         }
     }
 
     private void mostrarMinas() {
         campos.stream()
-            .filter(c -> c.isMinado())
-            .forEach(c -> c.setAberto(true));
+                .filter(c -> c.isMinado())
+                .filter(c -> !c.isMarcado())
+                .forEach(c -> c.setAberto(true));
     }
 
     public int getLinhas() {
