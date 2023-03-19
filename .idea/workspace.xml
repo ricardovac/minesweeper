@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e4497d-ad61-46bb-ab30-25760c4ec6f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/views/BotaoCampo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Campo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/models/Tabuleiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/views/PainelTabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/views/PainelTabuleiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ricardovac/ms/views/BotaoCampo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ricardovac/ms/views/BotaoCampo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,9 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -33,6 +34,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -70,7 +74,8 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -203,7 +208,7 @@
       <workItem from="1679125358628" duration="168000" />
       <workItem from="1679136607785" duration="7085000" />
       <workItem from="1679152626712" duration="2055000" />
-      <workItem from="1679189807970" duration="2708000" />
+      <workItem from="1679189807970" duration="3397000" />
     </task>
     <servers />
   </component>
